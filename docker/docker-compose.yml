@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    image: shopping-cart-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8070:8070"
+    container_name: shopping-cart-app
